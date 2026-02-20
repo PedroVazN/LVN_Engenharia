@@ -8,13 +8,6 @@ import ReformasSection from '../components/ReformasSection'
 import EngenheiroLucasSection from '../components/EngenheiroLucasSection'
 import { services, differentials } from '../data/services'
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 24 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: '-40px' },
-  transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
-}
-
 export default function Home() {
   useEffect(() => {
     if (window.location.hash === '#reformas') {
@@ -42,11 +35,11 @@ export default function Home() {
             />
           ))}
         </div>
-        <motion.div {...fadeInUp} className="mt-14 text-center">
+        <div className="mt-14 text-center">
           <Link to="/servicos" className="btn-outline">
             Ver todos os serviços
           </Link>
-        </motion.div>
+        </div>
       </Section>
 
       <EngenheiroLucasSection />
