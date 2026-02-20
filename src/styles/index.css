@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-secondary antialiased bg-background;
+    font-feature-settings: "ss01", "ss02", "cv02", "cv03", "cv04", "cv11";
+    letter-spacing: 0.01em;
+  }
+  h1, h2, h3 {
+    @apply text-primary tracking-tight;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-7 py-3.5 rounded-xl font-semibold text-white bg-accent
+      shadow-lg hover:shadow-xl hover:-translate-y-0.5
+      active:translate-y-0
+      transition-all duration-300 ease-out;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-7 py-3.5 rounded-xl font-semibold text-primary border-2 border-primary
+      hover:bg-primary hover:text-white
+      transition-all duration-300 ease-out;
+  }
+  .section-spacing {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+  .prose-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Scroll reveal base */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
