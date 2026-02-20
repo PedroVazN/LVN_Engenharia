@@ -39,12 +39,12 @@ export default function Navbar() {
       }`}
     >
       <nav className="container mx-auto px-4 md:px-6 max-w-6xl">
-        <div className="flex items-center justify-between h-20 md:h-24 py-2">
+        <div className="flex items-center justify-between h-16 md:h-20 py-2">
           <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
             <img
               src={showLightHeader ? '/LOGO_BRANCA.png' : '/LOGO_ESCURA.png'}
               alt="LVN Engenharia"
-              className="h-20 md:h-24 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+              className="h-14 md:h-16 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
             />
           </Link>
 
