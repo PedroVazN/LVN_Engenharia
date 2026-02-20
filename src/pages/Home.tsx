@@ -73,10 +73,7 @@ export default function Home() {
         title="Pronto para começar?"
         subtitle="Entre em contato e solicite um orçamento sem compromisso."
       >
-        <motion.div
-          {...fadeInUp}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-        >
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="https://wa.me/5511970606390"
             target="_blank"
@@ -88,7 +85,7 @@ export default function Home() {
           <Link to="/contato" className="btn-outline">
             Enviar mensagem
           </Link>
-        </motion.div>
+        </div>
       </Section>
     </main>
   )
